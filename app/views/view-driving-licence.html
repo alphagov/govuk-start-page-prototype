@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  View or share your driving licence information
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="https://www.gov.uk">Home</a></li>
+      <li><a href="">Driving and transport</a></li>
+      <li>Driving licences</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        View or share your driving licence information
+      </h1>
+
+      <p>You can use this service to:</p>
+
+      <ul class="list list-bullet">
+        <li>view your driving record, for example vehicles you can drive</li>
+        <li>check your penalty points or disqualifications</li>
+        <li>create a licence ‘check code’ to share your driving record with someone, for example a car hire company</li>
+      </uL>
+
+      <p>The ‘check code’ will be valid for 21 days.</p>
+
+      <p>You’ll need:</p>
+
+      <ul class="list list-bullet">
+        <li>your driving licence number</li>
+        <li>your <a href="#">National Insurance number</a></li>
+        <li>the postcode on your driving licence</li>
+      </ul>
+
+        <div role="note" class="panel panel-border-wide">
+          <p>The online service is also available in <a href="#">Welsh (Cymraeg).</a></p>
+        </div>
+
+      <p>
+        <a class="button button-start" href="https://www.viewdrivingrecord.service.gov.uk/driving-record/licence-number" role="button">Start now</a>
+      </p>
+
+
+      <p class="modified-date">
+        Last updated: 18 October 2017
+      </p>
+    </div>
+    <div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Driving licences</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">Driving licence codes</a></li>
+            <li><a href="#">Tell DVLA you’ve changed address</a></li>
+            <li><a href="#">Driving licence categories</a></li>
+            <li><a href="#">Check someone's driving licence information</a></li>
+            <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+          </ul>
+        </nav>
+        <h2 class="heading-medium" id="subsection-title">Elsewhere on the web</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">Northern Ireland driving licences</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
