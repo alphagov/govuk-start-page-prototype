@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+      <p class="panel">
+        Your State Pension forecast is provided for your information only and the service does not offer financial advice. When planning for your retirement, you should seek professional advice.
+      </p>
+    </div>
+    <div class="column-full">
+      <h2 class="heading-medium">You need to confirm your identity</h2>
+    </div>
+    <div class="column-one-half">
+      <p>
+        You can sign in using the Government Gateway. You may need to answer a few questions – they’ll be based on things HMRC already know about you. You can then access other HMRC services securely.
+      </p>
+      <a class="button" type="submit" href="https://www.tax.service.gov.uk/check-your-state-pension/account">Continue</a>
+    </div>
+    <div class="column-one-half">
+      <p class="panel" style="padding-top:0em;padding-left:30px">
+        You can also <a href="https://www.tax.service.gov.uk/check-your-state-pension/signin/verify">sign in using GOV.UK Verify</a>.
+        If you have not used GOV.UK Verify before, it will take you about 15 minutes to get set up. You can access other government services securely wherever you see the GOV.UK Verify logo.
+      </p>
+      <img src="{{ asset_path }}/images/govuk-verify.png" class="verify-logo">
+    </div>
+  </div>
+</main>
+
+{% endblock %}
