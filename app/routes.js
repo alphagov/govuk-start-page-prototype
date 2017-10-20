@@ -13,7 +13,7 @@ router.post('/check-state-pension-options-1', function (req, res) {
   } else if (req.body.loginoption === "verify") {
     res.redirect('https://www.tax.service.gov.uk/check-your-state-pension/signin/verify')
   } else {
-    res.redirect('/')
+    res.redirect('/options-on-interstitial/create-new-account-1')
   }
 })
 
