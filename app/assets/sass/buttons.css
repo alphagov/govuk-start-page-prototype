@@ -1,0 +1,10 @@
+.left {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.right {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1em;
+}
