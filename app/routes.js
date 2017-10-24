@@ -7,7 +7,7 @@ router.get('/', function (req, res) {
 })
 
 // add your routes here
-router.post('/check-state-pension-options-1', function (req, res) {
+router.post('/options-on-interstitial/check-state-pension-interstitial-1', function (req, res) {
   if (req.body.loginoption === "government-gateway") {
     res.redirect('https://www.tax.service.gov.uk/gg/sign-in?continue=%2Fcheck-your-state-pension%2Faccount&origin=nisp-frontend&accountType=individual')
   } else if (req.body.loginoption === "verify") {
