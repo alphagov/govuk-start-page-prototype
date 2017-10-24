@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  {% if error %}
+    <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+      <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+        Sign-in option has not been selected.
+      </h2>
+      <ul class="error-summary-list">
+        <li><a href="#how-sign-in">Please select an option.</a></li>
+      </ul>
+    </div>
+  {% endif %}
+  <form role="form" action="/check-state-pension-options-1" method="post" id="login-options">
+      <fieldset>
+        <legend>
+          <h1 class="heading-xlarge">How do you want to sign in?</h1>
+        </legend>
+        <div class="grid-row">
+          <div class="column-two-thirds">
+            <p>
+              Lorem ipsum dolor sit amet, te vix nisl splendide signiferumque, mel reque appetere cu. Pro eu populo conceptam. Id copiosae dissentias eam. Eum ea dico exerci dicunt, mea te habeo.
+            </p>
+          </div>
+        </div>
+        <div class="form-group {% if error %} form-group-error {% endif %}">
+          {% if error %}
+          <span class="error-message" id="how-sign-in">
+            Please select an option.
+          </span>
+          {% endif %}
+        <div class="multiple-choice">
+          <input id="government-gateway" type="radio" name="loginoption" value="government-gateway"/>
+          <label for="government-gateway">Government Gateway</label>
+        </div>
+        <div class="multiple-choice">
+          <input id="verify" type="radio" name="loginoption" value="verify"/>
+          <label for="verify">GOV.UK Verify</label>
+        </div>
+        <div class="multiple-choice">
+          <input id="no-account" type="radio" name="loginoption" value="no-account"/>
+          <label for="no-account">I don't have an account</label>
+        </div>
+      </fieldset>
+    </div>
+    <button class="button" type="submit" form="login-options" value="Continue">Continue</button>
+  </form>
+</main>
+
+{% endblock %}
