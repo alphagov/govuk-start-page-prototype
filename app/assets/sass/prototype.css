@@ -39,3 +39,31 @@
 .image-responsive {
   max-width: 100%;
 }
+
+.image-radio {
+  float: right;
+  user-select: none;
+  max-height: 50px;
+  margin-left: 30px;
+}
+
+.multiple-choice label {
+  float: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 641px) {
+  .multiple-choice {
+    min-width: 20em;
+  }
+}
+
+@media (max-width: 400px) {
+  .image-radio {
+    margin-top: 10px;
+    display: block;
+    float: none;
+    margin-left: 0;
+  }
+}
