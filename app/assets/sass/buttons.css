@@ -1,10 +1,41 @@
-.left {
-  display: inline-block;
+/* prototype css, throwaway */
+
+.inline-group {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.inline-group * {
+  box-sizing: inherit;
+}
+
+.inline-group--item {
+  float: left;
+  margin-left: 30px;
+  margin-right: 30px;
   vertical-align: middle;
 }
 
-.right {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 1em;
+.inline-group--item-aside {
+  max-width: 200px;
+}
+
+.button--start,
+.button--link {
+  margin-bottom: 20px;
+}
+
+.button--link {
+  display: block;
+}
+
+.inline-group--item .button--start {
+    width: 100%;
+    text-align: center;
+}
+
+.image-responsive {
+  max-width: 100%;
 }
