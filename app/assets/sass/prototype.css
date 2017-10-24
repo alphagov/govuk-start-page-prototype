@@ -40,6 +40,11 @@
   max-width: 100%;
 }
 
+/**
+ *
+ * Uncomment for logos inline in radios
+ *
+
 .image-radio {
   float: right;
   user-select: none;
@@ -59,7 +64,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 641px) {
   .image-radio {
     margin-top: 10px;
     display: block;
@@ -67,3 +72,6 @@
     margin-left: 0;
   }
 }
+
+*
+*/
