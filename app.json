@@ -1,0 +1,23 @@
+{
+  "name": "govuk-start-page-prototype",
+  "scripts": {
+  },
+  "env": {
+    "PASSWORD": {
+      "required": true
+    },
+    "USERNAME": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
