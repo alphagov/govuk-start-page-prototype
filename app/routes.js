@@ -20,11 +20,9 @@ router.post('/lab-session-1/options-on-interstitial/check-state-pension/intersti
 })
 router.post('/lab-session-2/options-on-interstitial/view-driving-licence/interstitial', function (req, res) {
   if (req.body.loginoption === "government-gateway") {
-    res.redirect('update-me')
+    res.redirect('https://www.viewdrivingrecord.service.gov.uk/driving-record/licence-number')
   } else if (req.body.loginoption === "verify") {
-    res.redirect('update-me')
-  } else if (req.body.loginoption === "no-account") {
-    res.redirect('/lab-session-2/options-on-interstitial/view-driving-licence/create-new-account')
+    res.redirect('https://www.viewdrivingrecord.service.gov.uk/verify/start')
   } else {
     res.render('lab-session-2/options-on-interstitial/view-driving-licence/interstitial', { error: true })
   }

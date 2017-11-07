@@ -142,3 +142,9 @@
         margin-bottom:0
     }
 }
+
+@media (max-width: 640px) {
+  .margin-top-small {
+    margin-top: 15px;
+  }
+}
