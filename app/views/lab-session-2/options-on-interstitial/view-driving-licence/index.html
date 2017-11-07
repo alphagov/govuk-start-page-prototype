@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Check your state pension
+  View or share your driving licence information
 {% endblock %}
 
 {% block proposition_header %}
@@ -18,97 +18,127 @@
 
   <div class="breadcrumbs">
     <ol>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Working, jobs and pensions</a></li>
-      <li><a href="#">State Pension</a></li>
+      <li><a href="https://www.gov.uk">Home</a></li>
+      <li><a href="">Driving and transport</a></li>
+      <li>Driving licences</li>
     </ol>
   </div>
 
   <div class="grid-row">
     <div class="column-two-thirds">
+
       <h1 class="heading-xlarge">
-        {% if serviceName %} {{ serviceName }} {% endif %}
+        View or share your driving licence information
       </h1>
 
-      <p>Use this service to find out:</p>
+      <section class="intro">
+        <p>You can use this service to:</p>
 
-      <ul class="list list-bullet">
-        <li>how much State Pension you could get (this amount is also known as your State Pension forecast)</li>
-        <li>when you can get it</li>
-        <li>how to increase it, if you can</li>
-      </ul>
+        <ul class="list list-bullet">
+          <li>view your driving record, for example vehicles you can drive</li>
+          <li>check your penalty points or disqualifications</li>
+          <li>create a licence ‘check code’ to share your driving record with someone, for example a car hire company</li>
+        </uL>
 
-      <div role="note" class="panel panel-border-wide">
+        <p>The ‘check code’ will be valid for 21 days.</p>
+
+        <p>You’ll need:</p>
+
+        <ul class="list list-bullet">
+          <li>your driving licence number</li>
+          <li>your <a href="#">National Insurance number</a></li>
+          <li>the postcode on your driving licence</li>
+        </ul>
+
+        <div role="note" class="panel panel-border-wide">
+          <p>The online service is also available in <a href="#">Welsh (Cymraeg).</a></p>
+        </div>
+
         <p>
-          This page is also available in Welsh (<a href="#">Cymraeg</a>).
+          <a class="button button-start"  href="interstitial" role="button">Start now</a>
         </p>
-      </div>
-      <p>
-        <a href="https://www.gov.uk/government/news/proposed-new-timetable-for-state-pension-age-increases">The State Pension age is under review</a>
-        and may change in the future.
-      </p>
-      <div role="note" class="panel panel-border-wide">
-        <p>
-          You can’t use this service if you’re already getting your State Pension or if you’ve delayed (‘deferred’) claiming it.
-        </p>
-      </div>
+      </section>
 
-      <h2 class="heading-medium">Sign in to continue</h2>
-      <p>
-        To continue you’ll need to prove your identity by signing in with a government ID account.
+      <section class="more">
+        <div class="js-tabs nav-tabs">
+          <ul>
+            <li class="active"><a href="#more-information">More information</a></li>
+            <li><a href="#other-ways-to-apply">Other ways to apply</a></li>
+          </ul>
 
-      </p>
-      <a class="button button-start" role="button" href="interstitial">
-        Sign in or create an account
-      </a>
+          <div class="js-tab-content tab-content">
+            <div class="js-tab-pane tab-pane" id="more-information">
+              <p>
+                You can’t use this service if your licence was issued outside of
+                England, Wales or Scotland.
+              </p>
+              <p>
+                It’s a criminal offence to obtain someone else’s personal
+                information without their permission.
+              </p>
+            </div>
 
-      <h2 class="heading-medium">Other ways to apply</h2>
-      <p>
-        If you’ll reach <a href="https://www.gov.uk/state-pension-age">your State Pension age</a>
-        in more than 30 days, call the
-        <a href="https://www.gov.uk/future-pension-centre">Future Pension Centre</a>
-        and ask for a statement.
-      </p>
-      <p>
-        You can also fill in the <a href="https://www.gov.uk/government/publications/application-for-a-state-pension-statement">BR19 application form</a>
-        and send it in the post.
-      </p>
-      <p>
-        You’ll get your statement within 10 working days.
-      </p>
-
-      <h2 class="heading-medium">If you’re already getting your State Pension or have delayed claiming it</h2>
-      <p>
-        To get information about your State Pension, contact the
-        <a href="https://www.gov.uk/contact-pension-service">Pension Service</a>
-        if you’re in the UK or the
-        <a href="https://www.gov.uk/international-pension-centre">International Pension Centre</a>
-        if you live abroad.
-      </p>
-
-      <h2 class="heading-medium">If you've worked and paid National Insurance in the Isle of Man</h2>
-      <p>
-        Contact the
-        <a href="https://www.gov.uk/future-pension-centre">Future Pension Centre</a>
-        to get information about your State Pension.
-      </p>
+            <div class="js-tab-pane tab-pane" id="other-ways-to-apply">
+              <h2 class="heading-medium">Apply using GOV.UK Verify</h2>
+              <p>
+                You can also <a href="https://www.viewdrivingrecord.service.gov.uk/verify/start">use GOV.UK Verify</a>
+                to access your driving licence information and get a licence check code.
+              </p>
+              <p>
+                If you haven’t used GOV.UK Verify before, it will take you
+                about 5 minutes to get set up.
+              </p>
+              <h2 class="heading-medium">Apply by phone</h2>
+              <p>
+                0300 083 0013</br>
+                Monday to Friday, 8am to 7pm</br>
+                Saturday, 8am to 2pm</br>
+                <a href="https://www.gov.uk/call-charges">Find out about call charges</a>
+              </p>
+              <h2 class="heading-medium">Apply by post</h2>
+              <p>
+                You can either send a
+                <a href="https://www.gov.uk/government/publications/d888-request-by-an-individual-for-information-from-their-driving-record">request form</a>
+                or a letter with the following information to the DVLA:
+              </p>
+              <ul style="list-style-type:disc;margin-bottom:20px">
+                <li style="font-size:1em;margin-left:1em">your full name and address</li>
+                <li style="font-size:1em;margin-left:1em">your driver licence number (or your date of birth if you don’t know your driver number)</li>
+              </ul>
+              <p>
+                Send your request to:
+              </p>
+              DACT Team,</br>
+              DVLA,</br>
+              Swansea,</br>
+              SA99 1AJ
+              <p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <p class="modified-date">
-        Last updated: 18 October 2017
+        Last updated: 29 September 2017
       </p>
     </div>
     <div class="column-third">
 
       <aside class="govuk-related-items" role="complementary">
-        <h2 class="heading-medium" id="subsection-title">State pension</h2>
+        <h2 class="heading-medium" id="subsection-title">Driving licences</h2>
         <nav role="navigation" aria-labelledby="subsection-title">
           <ul class="font-xsmall">
-            <li><a href="#">The basic State Pension</a></li>
-            <li><a href="#">Check your State Pension age</a></li>
-            <li><a href="#">The new State Pension</a></li>
-            <li><a href="#">Claim your State Pension online</a></li>
-            <li><a href="#">Early retirement, your pension and benefits</a></li>
+            <li><a href="#">Driving licence codes</a></li>
+            <li><a href="#">Tell DVLA you’ve changed address</a></li>
+            <li><a href="#">Driving licence categories</a></li>
+            <li><a href="#">Check someone's driving licence information</a></li>
             <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+          </ul>
+        </nav>
+        <h2 class="heading-medium" id="subsection-title">Elsewhere on the web</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">Northern Ireland driving licences</a></li>
           </ul>
         </nav>
       </aside>
