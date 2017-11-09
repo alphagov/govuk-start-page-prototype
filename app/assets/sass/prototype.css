@@ -75,3 +75,76 @@
 
 *
 */
+
+.govuk-govspeak .contact:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.govuk-govspeak .contact {
+    border-left: 1px solid #bfc1c3;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px
+}
+
+.govuk-govspeak .contact {
+    position: relative
+}
+
+.govuk-govspeak .contact .content {
+    float: none;
+    width: 100%
+}
+
+.govuk-govspeak .contact .content h3 {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 5px
+}
+
+@media (min-width: 641px) {
+    .govuk-govspeak .contact .content h3 {
+        font-size:19px;
+        line-height: 1.31579
+    }
+}
+
+.govuk-govspeak .contact .content .email-url-number .email {
+    word-wrap: break-word
+}
+
+.govuk-govspeak .contact .content .email-url-number span {
+    display: block
+}
+
+.govuk-govspeak .contact .content .comments {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.14286
+}
+
+@media (min-width: 641px) {
+    .govuk-govspeak .contact .content .comments {
+        font-size:16px;
+        line-height: 1.25
+    }
+}
+
+@media (min-width: 641px) {
+    .govuk-govspeak .contact .content .comments {
+        margin-bottom:0
+    }
+}
+
+@media (max-width: 640px) {
+  .margin-top-small {
+    margin-top: 15px;
+  }
+}

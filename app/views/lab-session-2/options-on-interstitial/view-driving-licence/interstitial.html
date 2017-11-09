@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Choose a way to use this service
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <a class="link-back" href="index">
+    Back <span class="visuallyhidden"> to the start</span>
+  </a>
+  {% if error %}
+    <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+      <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+        You haven't selected an option
+      </h2>
+      <ul class="error-summary-list">
+        <li><a href="#how-sign-in">Please select an option</a></li>
+      </ul>
+    </div>
+  {% endif %}
+  <form role="form" action="/lab-session-2/options-on-interstitial/view-driving-licence/interstitial" method="post" id="login-options">
+      <fieldset>
+        <legend>
+          <h1 class="heading-xlarge" style="margin-bottom: 30px">Choose a way to use this service</h1>
+        </legend>
+        <div class="grid-row">
+          <div class="column-two-thirds">
+            <p>
+              You need to prove your identity to view your driving licence information.
+            </p>
+          </div>
+        </div>
+        <div class="form-group {% if error %} form-group-error {% endif %}">
+          {% if error %}
+          <span class="error-message" id="how-sign-in">
+            Please select an option
+          </span>
+          {% endif %}
+        <div class="multiple-choice">
+          <input id="government-gateway" type="radio" name="loginoption" value="government-gateway"/>
+          <label for="government-gateway">
+            Use your driving licence and National Insurance number
+          </label>
+        </div>
+        <div class="multiple-choice">
+          <input id="verify" type="radio" name="loginoption" value="verify"/>
+          <label for="verify">
+            Prove your identity with GOV.UK Verify
+          </label>
+        </div>
+      </fieldset>
+    </div>
+    <details class="margin-top-small" style="margin-bottom: 30px;">
+      <summary><span class="summary">I don’t have either of these</span></summary>
+      <div class="panel panel-border-narrow">
+        <p>You can get help if you <a href="https://gov.uk/lost-national-insurance-number">don’t know or can’t find your National Insurance number</a>.</p>
+
+        <p>You can create a GOV.UK Verify account if you don’t already have one. It takes about 5 minutes.</p>
+
+        <p>You might already have an account if you’ve signed up to do things like check your company car tax online.</p>
+
+        <p>Once you have an account, you can use it to do other things online, such as file your Self Assessment tax return.</p>
+
+        <p><a rel="external" href="https://www.viewdrivingrecord.service.gov.uk/verify/start">Create a GOV.UK Verify account</a></p>
+      </div>
+    </details>
+    <button class="button" type="submit" form="login-options" value="Continue">Continue</button>
+  </form>
+</main>
+
+{% endblock %}
